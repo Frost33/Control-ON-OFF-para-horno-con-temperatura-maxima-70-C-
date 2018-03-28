@@ -1,0 +1,21 @@
+fig=figure('Name','Autor Nicolas David Pastran','NumberTitle','off','Color','white','position',[250 200 850 400]);       
+cla('reset')
+datose = csvread("DatosExperimentales/EscalonV7a12.csv",2,0);
+t=(datose(:,1)');
+v1=(datose(:,2)');
+v2=(datose(:,3)');
+s(1)=subplot(2,1,1);
+plot(t,v2,'Color','blue');grid on;
+xlabel('Tiempo [S]');
+ylabel('Voltios [V]');
+ax = gca;
+ax.YLim = [6.8, 12.1]; 
+ax.XLim = [0 700]; 
+s(2)=subplot(2,1,2);
+plot(t,10*v1,'Color','red');grid on;
+xlabel('Tiempo [S]');
+ylabel('Temperatura [°C]');
+ax = gca;
+ax.XLim = [0 700];
+title(s(1),'Escalon de 7V a 12V','FontSize',13,'Color', 'blue');
+title(s(2),'Respuesta de la planta','FontSize',13,'Color', 'blue');
