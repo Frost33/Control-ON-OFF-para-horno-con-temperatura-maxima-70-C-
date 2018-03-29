@@ -1,6 +1,6 @@
 fig=figure('Name','Autor Nicolas David Pastran','NumberTitle','off','Color','white','position',[250 200 850 400]);       
 cla('reset')
-%datose = csvread("DatosExperimentales/EscalonV10a11.csv",2,0);
+datose = csvread("DatosExperimentales/EscalonV10a11.csv",2,0);
 t=(datose(:,1)')+512;
 v1=(datose(:,2)')*10;
 v2=(datose(:,3)');

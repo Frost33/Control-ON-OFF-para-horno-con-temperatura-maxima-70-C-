@@ -1,4 +1,4 @@
-fig=figure('Name','Autor Nicolas David Pastran','NumberTitle','off','Color','white','position',[250 200 850 400]);       
+momentofig=figure('Name','Autor Nicolas David Pastran','NumberTitle','off','Color','white','position',[250 200 850 400]);       
 cla('reset')
 datose = csvread("DatosExperimentales/EscalonV4a5.csv",2,0);
 i=2:2:1000;
