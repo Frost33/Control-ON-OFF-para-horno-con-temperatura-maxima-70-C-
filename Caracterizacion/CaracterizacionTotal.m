@@ -11,7 +11,7 @@ t9=(datose(:,1)')+512;
 v9=(datose(:,2)')-0.455;
 datose = csvread("DatosExperimentales/EscalonV11a12.csv",2,0);
 t11=(datose(:,1)'+514);
-v11=(datose(:,2)'-0.778);
+v11=(datose(:,2)'-0.775);
 plot(t5,100*v5,'Color','red');grid on;hold on;
 plot(t7,1000*v7,'Color','blue');grid on;hold on;
 plot(t9,1000*v9,'Color','black');grid on;hold on;
